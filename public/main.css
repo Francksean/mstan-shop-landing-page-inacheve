@@ -1,0 +1,90 @@
+body{
+  
+  background: linear-gradient(90deg, rgba(255,101,73,0.7232142857142857) 11%, rgba(235,85,87,0.7512254901960784) 52%, rgba(255,92,120,0.7092086834733893) 83%);
+}
+
+
+.navbar{
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#nav-logo{
+  display: block;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px white;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width:50% ;
+  font-weight: bold;
+  
+}
+.navbar ul li{
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar ul li::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  border: 1px solid black;
+  width: 100%;
+  background-color: aqua;
+
+}
+.navbar ul li:hover{
+  transform: scale(1.05);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.hero-banner{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.left-side{
+  width: 60%;
+  padding-left: 40px;
+}
+.right-side{
+  width: 100%;
+  display: flex;
+  margin-left: 5%;
+  position: relative;
+}
+#main-right-image, #second-right-image{
+  border-radius: 1em;
+  height: 420px;
+  width: 50%;
+}
+#main-right-image{
+  position: absolute;
+  right: 300px;
+  transform: rotate(15deg);
+  z-index: -1;
+  box-shadow: 10px 10px 10px gainsboro;
+}
+#second-right-image{
+  position: absolute;
+  right: 40px;
+  bottom: -140px;
+  box-shadow: 10px 10px 10px black;
+
+}
+
+.articles{
+  padding-left: 40px;
+  margin-top: 100px;
+  height: 700px;
+  z-index: 1;
+}
+
